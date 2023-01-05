@@ -3,6 +3,7 @@ import emoji
 import random
 
 #inicio do clean code
+#jogo ainda está em fase de melhorias
 
 def backpack(list):
     for x, e in enumerate(list):
