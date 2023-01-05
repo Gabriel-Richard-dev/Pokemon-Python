@@ -2,12 +2,14 @@ import time
 import emoji
 import random
 
+#inicio do clean code
+
 def backpack(list):
     for x, e in enumerate(list):
         print(emoji.emojize(f"\nMochila :backpack: :\n[{x+1}] {e}"))
     time.sleep(1)
 
-
+#terminar depois
 
 Local1 = [emoji.emojize("Quarto:house:"), emoji.emojize("Casa:house:"), emoji.emojize("Cidade Inicial: Fortaleza Town :cityscape:")]
 team = []
