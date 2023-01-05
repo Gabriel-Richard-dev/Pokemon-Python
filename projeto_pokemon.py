@@ -2,6 +2,12 @@ import time
 import emoji
 import random
 
+def backpack(list):
+    for x, e in enumerate(list):
+        print(emoji.emojize(f"\nMochila :backpack: :\n[{x+1}] {e}"))
+    time.sleep(1)
+
+
 
 Local1 = [emoji.emojize("Quarto:house:"), emoji.emojize("Casa:house:"), emoji.emojize("Cidade Inicial: Fortaleza Town :cityscape:")]
 team = []
@@ -65,9 +71,7 @@ while True:
         print(you)
         time.sleep(1)
     if resp == "B" or resp == "b":
-        for x, e in enumerate(bag):
-            print(emoji.emojize(f"\nMochila :backpack: :\n[{x+1}] {e}"))
-        time.sleep(1)
+        print(backpack(bag))
     if resp =="P" or resp == "p":
         print(emoji.emojize("Você ainda não tem nenhum pokemon! :cross_mark:"))
         time.sleep(1)
